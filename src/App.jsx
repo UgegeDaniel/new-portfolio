@@ -4,13 +4,7 @@ import { animateScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
 // components
-import Home from './Components/Home';
-import Nav from './Components/Nav';
-import Projects from './Components/Projects';
-import Socials from './Components/Socials';
-import About from './Components/About';
-import Skills from './Components/Skills';
-import Mail from './Components/Mail';
+import { Home, Nav,Projects, Socials, About, Skills, Mail } from './Components';
 
 // icon
 import { CgArrowLongUp } from 'react-icons/cg';
