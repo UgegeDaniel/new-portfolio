@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
 import '../styles/Mail.css'
-
 import { send } from 'emailjs-com';
 
 const Mail = () => {
