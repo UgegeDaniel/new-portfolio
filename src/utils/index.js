@@ -1,3 +1,8 @@
 export { default as handleDownload } from './handleDownload'
 export { default as links } from './links'
+export { default as validation } from './validation'
+export { default as handleSubmit } from './handleSubmit'
+export { default as projects } from './projects'
+export { default as skills } from './skills'
+export { toSendInitialState } from './initialStates'
 export { aboutMeText, arrayOfWords } from './randomWords'

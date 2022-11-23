@@ -1,3 +1,21 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+	--clr-primary-1: #181721;
+	--clr-secondary-1: #1da1f2;
+	--clr-primary-2: #232135;
+	--clr-primary-6: #6253e8;
+	--clr-grey-5: #f5f5f5;
+	--clr-grey-6: #666;
+	--clr-primary-10: hsl(30, 100%, 96%);
+	--clr-white: #fff;
+	--gradient: linear-gradient(to bottom right, var(--clr-secondary-1), var(--clr-primary-6));
+	--btn-gradient: linear-gradient(var(--clr-primary-2), var(--clr-primary-2)),
+	radial-gradient(circle at top left, var(--clr-secondary-1), var(--clr-primary-6));
+  }
 /* width */
 ::-webkit-scrollbar {
 	width: 3px;

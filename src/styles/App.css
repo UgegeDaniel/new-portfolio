@@ -1,11 +1,11 @@
-.App > div {
+.App>div {
 	padding-left: 10rem;
 	padding-right: 10rem;
 }
 
 .dark {
-	box-shadow: 30px 20px 5px #232135;
-	background-color: #181721;
+	box-shadow: 30px 20px 5px var(--clr-primary-2);
+	background-color: var(--clr-primary-1);
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -26,7 +26,7 @@ h2 {
 }
 
 .arrow {
-	background-color: #232135;
+	background-color: var(--clr-primary-2);
 	height: 60px;
 	width: 60px;
 	border-radius: 10px;
@@ -36,11 +36,11 @@ h2 {
 }
 
 .arrow svg {
-	color: #6253e8;
+	color: var(--clr-primary-6);
 }
 
 @media only screen and (max-width: 800px) {
-	.App > div {
+	.App>div {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
 	}

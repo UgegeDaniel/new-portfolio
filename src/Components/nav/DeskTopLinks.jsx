@@ -10,6 +10,5 @@ const DeskTopLinks = ({handleClick, NavLinks}) => (
             <NavLinks/>
         </div>
     </React.Fragment>
-
 )
 export default DeskTopLinks

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import {NavLink, NavLinks, MobileLinks, DeskTopLinks} from './index'
 import './styles/Nav.css'
 
@@ -21,4 +21,3 @@ const Nav = () => {
 }
 
 export default Nav;
-
