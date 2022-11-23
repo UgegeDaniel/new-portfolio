@@ -1,27 +1,36 @@
 :root {
 	--skill-color: black;
-	--container-width: 600px;
-	--skill-size: calc(var(--container-width) / 5);
+	--container-width: 50vw;
+	--number: 12;
+	--skill-size: calc(var(--container-width) / var(--number));
 }
 
 .skills {
 	width: var(--container-width);
 }
-
+.skills > h2{
+	margin-left: 120px;
+}
 .skill {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 80px;
+	margin-right: -26px;
+	margin-top: 24px;
 }
 
 .skill div {
 	margin-right: 20px;
 	margin-bottom: 20px;
-	min-height: var(--skill-size);
+	/* min-height: var(--skill-size); */
 	width: var(--skill-size);
 	background-color: #ffffffe6;
+	max-height: 120px;
 	display: grid;
 	place-items: center;
-	padding: 5px;
+	padding: 20px;
 	border-radius: 20px;
 }
 
@@ -32,8 +41,8 @@
 }
 
 .skill div svg {
-	min-height: calc(var(--skill-size) - 40px);
-	width: calc(var(--skill-size) - 40px);
+	min-height: calc(var(--skill-size) - 5px);
+	width: calc(var(--skill-size) - 5px);
 	color: var(--skill-color);
 	transition: all 390ms ease-in-out;
 	margin-bottom: -5px;
@@ -68,15 +77,42 @@
 @media only screen and (max-width: 600px) {
 	:root {
 		--container-width: 500px;
+		--number: 7;
+	}
+	.skill {
+		justify-content: center;
+		align-items: center;
+	}
+	.skills{
+		max-height: 70vh;
+		overflow-y: scroll;
 	}
 }
 @media only screen and (max-width: 500px) {
 	:root {
 		--container-width: 380px;
+		--number: 6;
+	}
+	.skill {
+		justify-content: center;
+		align-items: center;
+	}
+	.skills{
+		max-height: 70vh;
+		overflow-y: scroll;
 	}
 }
 @media only screen and (max-width: 350px) {
 	:root {
 		--container-width: 300px;
+		--number: 5;
+	}
+	.skills{
+		max-height: 60vh;
+		overflow-y: scroll;
+	}
+	.skill {
+		justify-content: center;
+		align-items: center;
 	}
 }

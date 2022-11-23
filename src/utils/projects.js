@@ -14,6 +14,14 @@ const projects = [
       githubLink: 'https://github.com/',
       techs: ['React', 'Node', 'MongoDB', 'Socket.io', 'Redux'],
       category: "Personal Project"
+    },
+    {
+      name: 'Project 2',
+      desc: 'congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed',
+      liveLink: 'website url',
+      githubLink: 'https://github.com/',
+      techs: ['React', 'Node', 'MongoDB', 'Socket.io', 'Redux'],
+      category: "Personal Project"
     }
 ]
   export default projects

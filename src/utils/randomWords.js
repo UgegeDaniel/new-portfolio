@@ -11,4 +11,4 @@ export const arrayOfWords = [
     `It snows in the Sahara Desert`,
   ]
 
-  export const aboutMeText = 'I am a motivated front end web developer who brings a solution and creative driven mindset to every team and project. I have 3+ years experience in responsive web development and design with a couple projects under my belt.'
+  export const aboutMeText = 'I am a motivated front end web developer who brings a solution and creative driven mindset to every team and project. I create intiutitive and sleek web experience with clean code. I am self driven and always learning.'

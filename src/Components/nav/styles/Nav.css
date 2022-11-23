@@ -10,7 +10,7 @@
 	padding-left: var(--padding-width);
 	padding-right: var(--padding-width);
 	width: calc(100vw - calc(var(--padding-width) * 2));
-	z-index: 101;
+	z-index: 5;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -18,7 +18,7 @@
 }
 
 .nav h1 {
-	font-size: calc(1vw + 1.3rem);
+	font-size: calc(1vw + 1.5rem);
 	cursor: pointer;
 }
 
@@ -28,8 +28,8 @@
 
 .nav ul li {
 	list-style: none;
-	margin-left: 4rem;
-	border-bottom: solid #232135;
+	margin-left: 3.5rem;
+	border-bottom: 2px solid #232135;
 	border-image-slice: 1;
 	border-width: 2px;
 	font-size: calc(1vw + 0.5rem);
@@ -39,8 +39,13 @@
 .nav ul li:active {
 	cursor: pointer;
 	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
+	color: #1da1f2;
 }
-
+.active-page{
+	cursor: pointer;
+	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
+	color: #1da1f2;
+}
 .menu {
 	display: none;
 }

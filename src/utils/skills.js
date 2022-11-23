@@ -1,4 +1,4 @@
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiFigma, SiMongodb, SiFirebase, SiTypescript, SiNextdotjs } from 'react-icons/si'
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiFigma, SiMongodb, SiTypescript, SiNextdotjs } from 'react-icons/si'
 
 const skills = [
  {
@@ -14,7 +14,7 @@ const skills = [
  {
     className: '',
     icon: SiNextdotjs,
-    name: 'Next JS'
+    name: 'NextJS'
  },
  {
     className: 'html',
@@ -34,7 +34,7 @@ const skills = [
  {
     className: 'node',
     icon: SiNodedotjs,
-    name: 'Node JS'
+    name: 'NodeJS'
  },
  {
     className: 'fig',
@@ -45,11 +45,6 @@ const skills = [
     className: 'mon',
     icon: SiMongodb,
     name: 'MongoDB'
- },
- {
-    className: 'fire',
-    icon: SiFirebase,
-    name: 'Firebase'
  },
 ]
 export default skills

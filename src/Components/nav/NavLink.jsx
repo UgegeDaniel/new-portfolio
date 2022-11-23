@@ -1,9 +1,9 @@
 import { Link } from 'react-scroll';
 
-const NavLink = ({ handleClick, to, offset, text, className }) => (
+const NavLink = ({ handleClick, to, offset, text, className, activePage }) => (
     <Link
-        className={className}
-        onClick={handleClick}
+        className={`${className} ${activePage === to && "active-page"}`}
+        onClick={(e) => handleClick(e, to)}
         activeClass="active"
         to={to} spy={true}
         smooth={true}

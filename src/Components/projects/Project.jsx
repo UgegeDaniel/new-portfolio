@@ -10,8 +10,8 @@ const Project = ({ name, desc, techs, liveLink, githubLink, category}) => {
         {techs.map(item => <div key={item}>{item}</div>)}
       </div>
       <div className="btns">
-        <a href={liveLink} target="_blank" rel="noreferrer">Demo</a>
-        <a href={githubLink} target="_blank" rel="noreferrer">Github</a>
+        <a href={liveLink} target="_blank" rel="noreferrer" className="demo">Demo</a>
+        <a href={githubLink} target="_blank" rel="noreferrer" className='git-link'>Github</a>
       </div>
       {category && <div className="open">{category}</div>}
     </div>
