@@ -1,11 +1,10 @@
 import './styles/App.css';
 import { Fade } from 'react-awesome-reveal';
 import { Home, Nav, Projects, About, Mail, Footer } from './Components';
-
 function App() {
   return (
     <main className='App'>
-      <Nav />
+      <Nav/>
       <Home />
       <div className='dark'>
         <Fade fraction={.2} triggerOnce>

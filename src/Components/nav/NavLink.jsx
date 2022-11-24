@@ -8,8 +8,10 @@ const NavLink = ({ handleClick, to, offset, text, className, activePage }) => (
         to={to} spy={true}
         smooth={true}
         offset={offset}
-        duration={500}>
+        duration={500}
+        >
         {text}
+       
     </Link>
 )
 export default NavLink

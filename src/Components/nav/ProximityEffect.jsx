@@ -1,23 +1,22 @@
 import './styles/ProximityEffect.css';
 import { useEffect, useRef } from 'react'
 
-const ProximityEffect = () => {
+const ProximityEffect = ({ titleRef }) => {
     const containerRef = useRef(null)
     const eye1 = useRef(null)
     const eye2 = useRef(null)
     useEffect(() => {
         const ref = containerRef?.current.getBoundingClientRect();
-
+        const refX = ref.left + ref.width / 2;
+        const refY = ref.top + ref.height / 2;
         document.addEventListener("mousemove", (e) => {
-            // console.log(e);
             const userX = e.clientX;
             const userY = e.clientY;
-            const refX = ref.left + ref.width / 2;
-            const refY = ref.top + ref.height / 2;
             const angleDeg = angle(userX, userY, refX, refY)
-            console.log(angleDeg)
             eye1.current.style.transform = `rotate(${90 + angleDeg}deg)`
             eye2.current.style.transform = `rotate(${90 + angleDeg}deg)`
+            console.log(angleDeg)
+            titleRef.current.firstChild.style.color = `hsl(${angleDeg}, 7k0%, 60%)`
         })
         const angle = (cx, cy, ex, ey) => {
             const dy = ey - cy
