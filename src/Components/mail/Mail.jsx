@@ -17,12 +17,18 @@ const Mail = () => {
     <section className='mail' id='mail'>
       <h2>Get In Touch</h2>
       <form className='entry'>
-        <InputField name="name" value={name} handleChange={handleChange} labelTitle="Name" />
-        <InputField name="email" value={email} handleChange={handleChange} labelTitle="Email" />
-        <Options toSend={toSend} handleChange={handleChange} />
-        <InputField name="message" cols="30" rows="5" value={message} handleChange={handleChange} labelTitle="Message" />
-        <p style={{ color: 'red', display: 'none' }} ref={error}>You missed a field </p>
-        <button className='btn' onClick={() => handleSubmit(toSend, error, reset)}>Send Message</button>
+        <div className="flex">
+          <InputField name="name" value={name} handleChange={handleChange} labelTitle="Name" />
+          <InputField name="email" value={email} handleChange={handleChange} labelTitle="Email" />
+        </div>
+        <div className="flex">
+          <Options toSend={toSend} handleChange={handleChange} />
+          <InputField name="message" cols="30" rows="5" value={message} handleChange={handleChange} labelTitle="Message" />
+        </div>
+        <div className="flex">
+          <p style={{ color: 'red', display: 'none' }} ref={error}>You missed a field </p>
+          <button className='btn' onClick={() => handleSubmit(toSend, error, reset)}>Send Message</button>
+        </div>
       </form>
     </section>
   )

@@ -3,7 +3,7 @@
 }
 
 .mail {
-	padding-top: 100px;
+	padding-top: 25vh;
 	padding-bottom: 80px;
 }
 
@@ -35,13 +35,13 @@
 	resize: none;
 }
 
-.entry > div:not(.btn, .options) {
+.entry>div:not(.btn, .options, .flex) {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 }
 
-.entry > div:not(.btn) label {
+.entry>div:not(.btn) label {
 	margin-bottom: 5px;
 }
 
@@ -73,8 +73,9 @@
 	position: absolute;
 	left: -9999px;
 }
-[type='radio']:checked + label,
-[type='radio']:not(:checked) + label {
+
+[type='radio']:checked+label,
+[type='radio']:not(:checked)+label {
 	position: relative;
 	padding-left: 28px;
 	cursor: pointer;
@@ -82,8 +83,9 @@
 	display: inline-block;
 	color: var(--clr-grey-6);
 }
-[type='radio']:checked + label:before,
-[type='radio']:not(:checked) + label:before {
+
+[type='radio']:checked+label:before,
+[type='radio']:not(:checked)+label:before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -94,8 +96,9 @@
 	border-radius: 100%;
 	background: transparent;
 }
-[type='radio']:checked + label:after,
-[type='radio']:not(:checked) + label:after {
+
+[type='radio']:checked+label:after,
+[type='radio']:not(:checked)+label:after {
 	content: '';
 	width: 12px;
 	height: 12px;
@@ -107,12 +110,14 @@
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
-[type='radio']:not(:checked) + label:after {
+
+[type='radio']:not(:checked)+label:after {
 	opacity: 0;
 	-webkit-transform: scale(0);
 	transform: scale(0);
 }
-[type='radio']:checked + label:after {
+
+[type='radio']:checked+label:after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -135,20 +140,45 @@ button.btn {
 	padding: 12px 14px;
 }
 
+.input-item {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
 @media only screen and (max-width: 600px) {
 	:root {
-		--input-width: 97%;
+		--input-width: 92%;
+	}
+
+	.flex {
+		display: block;
 	}
 }
 
 @media only screen and (max-width: 531px) {
 	:root {
-		--input-width: 95%;
+		--input-width: 90%;
+	}
+
+	.flex {
+		display: block;
 	}
 }
 
 @media only screen and (max-width: 350px) {
 	:root {
-		--input-width: 94%;
+		--input-width: 88%;
+	}
+
+	.flex {
+		display: block;
 	}
 }

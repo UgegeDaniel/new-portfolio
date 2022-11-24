@@ -8,9 +8,6 @@
 .skills {
 	width: var(--container-width);
 }
-.skills > h2{
-	margin-left: 120px;
-}
 .skill {
 	display: flex;
 	flex-wrap: wrap;

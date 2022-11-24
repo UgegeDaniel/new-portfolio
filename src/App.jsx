@@ -1,8 +1,6 @@
 import './styles/App.css';
-import { animateScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
-import { Home, Nav, Projects, About, Mail } from './Components';
-import { CgArrowLongUp } from 'react-icons/cg';
+import { Home, Nav, Projects, About, Mail, Footer } from './Components';
 
 function App() {
   return (
@@ -22,10 +20,7 @@ function App() {
       </Fade>
       <div className='dark'>
         <Fade fraction={.2} triggerOnce>
-          <p>Thank you for scrolling💘</p>
-          <div className='arrow' onClick={() => animateScroll.scrollToTop()}>
-            <CgArrowLongUp />
-          </div>
+          <Footer />
         </Fade>
       </div>
     </main>
