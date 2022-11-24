@@ -1,9 +1,8 @@
 .Projects {
 	display: flex;
 	flex-direction: column;
-	margin-top: -1.5rem;
 	margin-bottom: 3rem;
-	padding-top: 20vh;
+	padding-top: 30vh;
 }
 
 .Projects > div {

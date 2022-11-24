@@ -1,9 +1,9 @@
 import React from 'react'
 import './About.css'
 import { aboutMeText } from '../../utils'
-const About = () => {
+const About = ({section}) => {
   return (
-    <section className='about' id="about">
+    <section className='about' id="about" ref={section}>
       <h2>Get To Know Me</h2>
       <div className="words">
         {aboutMeText}

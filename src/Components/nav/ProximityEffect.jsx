@@ -15,8 +15,7 @@ const ProximityEffect = ({ titleRef }) => {
             const angleDeg = angle(userX, userY, refX, refY)
             eye1.current.style.transform = `rotate(${90 + angleDeg}deg)`
             eye2.current.style.transform = `rotate(${90 + angleDeg}deg)`
-            console.log(angleDeg)
-            titleRef.current.firstChild.style.color = `hsl(${angleDeg}, 7k0%, 60%)`
+            titleRef.current.firstChild.style.color = `hsl(${angleDeg}, 70%, 60%)`
         })
         const angle = (cx, cy, ex, ey) => {
             const dy = ey - cy

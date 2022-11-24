@@ -10,4 +10,4 @@ const NavLinks = ({ handleClick, activePage }) => (
         )}
     </ul>
 )
-export default NavLinks
+export default NavLinks;

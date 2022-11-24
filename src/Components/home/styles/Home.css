@@ -52,6 +52,8 @@
 .btns {
 	margin-top: 0.5rem;
 	display: flex;
+	position: relative;
+	justify-content: space-between;
 }
 
 .btn1,
@@ -65,17 +67,15 @@
 }
 
 .btn1 {
-	min-height: 35px;
-	width: 120px;
-	background: var(--gradient);
-	margin-right: 10px;
 	border: 2px solid var(--clr-secondary-1);
-	font-weight: bold;
+	width: 150px;
+	background: var(--clr-secondary-1);;
 	font-size: 20px;
 	letter-spacing: 2px;
-	padding: 12px 14px;
-	color: var(--clr-white);
-	transition: all 0.2s ease-in-out;
+	font-weight: bold;
+	padding: 12px;
+	transition: all 0.5s ease-in-out;
+	margin-right: 1rem;
 }
 
 .btn1:hover{

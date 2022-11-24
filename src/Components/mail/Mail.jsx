@@ -3,7 +3,7 @@ import './styles/Mail.css'
 import { InputField, Options } from './index'
 import { toSendInitialState, handleSubmit } from '../../utils'
 
-const Mail = () => {
+const Mail = ({section}) => {
   const [toSend, setToSend] = useState(toSendInitialState);
   const { email, name, message } = toSend
   const error = useRef()
@@ -14,7 +14,7 @@ const Mail = () => {
     setToSend(toSendInitialState)
   }
   return (
-    <section className='mail' id='mail'>
+    <section className='mail' id='mail' ref={section}>
       <h2>Get In Touch</h2>
       <form className='entry'>
         <div className="flex">

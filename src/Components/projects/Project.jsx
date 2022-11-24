@@ -9,7 +9,7 @@ const Project = ({ name, desc, techs, liveLink, githubLink, category}) => {
       <div className="tech-stack">
         {techs.map(item => <div key={item}>{item}</div>)}
       </div>
-      <div className="btns">
+      <div className="project-btns">
         <a href={liveLink} target="_blank" rel="noreferrer" className="demo">Demo</a>
         <a href={githubLink} target="_blank" rel="noreferrer" className='git-link'>Github</a>
       </div>

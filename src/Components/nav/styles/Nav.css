@@ -49,7 +49,18 @@
 .menu {
 	display: none;
 }
-
+.small-nav-container{
+	position: relative;
+	text-align: right;
+}
+.close-links{
+	color: red;
+	position: absolute;
+	top: 4rem;
+	right: 1rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
 @media only screen and (max-width: 800px) {
 	:root {
 		--padding-width: 2.5rem;

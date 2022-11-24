@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    min-width: 100vw;
+    gap: auto;
+    position: relative;
+}
+
+.arrow{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}

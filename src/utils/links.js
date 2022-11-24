@@ -10,14 +10,15 @@ const links = [
       text: "Projects"
     },
     {
-      to: "mail",
-      offset: 0,
-      text: "Contact"
-    },
-    {
       to: "about",
       offset: -80,
       text: "About"
     },
+    {
+      to: "mail",
+      offset: 0,
+      text: "Contact"
+    },
+
   ]
   export default links;
