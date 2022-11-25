@@ -3,7 +3,7 @@
 	--container-width: 100vw;
 	--number: 26;
 	/* --skill-size: calc(var(--container-width) / var(--number)); */
-	--skill-size: 80px;
+	--skill-size: calc(100vw/15);
 }
 
 .skills {
@@ -44,6 +44,7 @@
 	font-weight: 600;
 	display: block;
 	/* margin-bottom: -2px; */
+	font-size: 12px;
 }
 
 .skill div svg {
