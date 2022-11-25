@@ -25,3 +25,33 @@
 .about>h2{
 	font-size: 3rem;
 }
+
+@media only screen and (max-width: 1040px) and (min-width: 899px) {
+	.about>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+	.about>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+	.about>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.about>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.about>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}

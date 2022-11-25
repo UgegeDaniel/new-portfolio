@@ -7,6 +7,10 @@
 	padding-bottom: 80px;
 }
 
+.mail>h2{
+	font-size: 3rem;
+}
+
 .entry input,
 .entry textarea {
 	background-color: var(--clr-primary-1);
@@ -139,7 +143,10 @@ button.btn {
 	letter-spacing: 2px;
 	padding: 12px 14px;
 }
-
+button.btn:hover{
+	background: var(--clr-grey-5);
+	color: var(--clr-primary-6);
+}
 .input-item {
 	display: inline-block;
 	margin-bottom: 10px;
@@ -180,5 +187,36 @@ button.btn {
 
 	.flex {
 		display: block;
+	}
+}
+
+
+@media only screen and (max-width: 1040px) and (min-width: 899px) {
+	.mail>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+	.mail>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+	.mail>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.mail>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.mail>h2 {
+		font-size: calc(1vw + 1.6rem);
 	}
 }
