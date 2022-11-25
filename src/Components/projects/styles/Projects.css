@@ -1,13 +1,20 @@
 .Projects {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
-	margin-bottom: 3rem;
-	padding-top: 30vh;
+	justify-content: center;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
 }
 
-.Projects > div {
+.Projects>div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
+}
+
+.Projects>h2{
+	font-size: 3.5rem;
 }

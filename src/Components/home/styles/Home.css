@@ -1,16 +1,19 @@
 .home {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding-top: 7vh;
-	padding-bottom: 30px;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
 	position: relative;
+	overflow: hidden;
 }
 
 .home-text h1 {
 	font-size: calc(1vw + 3rem);
-	height: auto;
-	padding-bottom: 40px;
+	height: 20%;
+	text-align: center;
+	/* padding-bottom: 40px; */
+	margin: 1rem;
 }
 
 .gradientText {
@@ -40,7 +43,7 @@
 }
 
 .react-typewriter-text-wrap {
-	margin-top: -3rem;
+	margin-top: -2rem;
 }
 
 .home-text .react-typewriter-text {
@@ -55,7 +58,12 @@
 	position: relative;
 	justify-content: space-between;
 }
-
+.btns {
+	margin: 0.5rem;
+	justify-content: center;
+	align-items: center;
+	max-width: 70vw;
+}
 .btn1,
 .btn2 {
 	border-radius: 10px;
@@ -69,7 +77,8 @@
 .btn1 {
 	border: 2px solid var(--clr-secondary-1);
 	width: 150px;
-	background: var(--clr-secondary-1);;
+	background: var(--clr-secondary-1);
+	;
 	font-size: 20px;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -78,7 +87,7 @@
 	margin-right: 1rem;
 }
 
-.btn1:hover{
+.btn1:hover {
 	background: var(--hover-gradient);
 }
 
@@ -92,32 +101,48 @@
 	padding: 12px;
 	transition: all 0.5s ease-in-out;
 }
+
 .btn2:hover {
 	background: var(--clr-white);
 	color: var(--clr-secondary-1);
 }
 
 @media only screen and (max-width: 1040px) and (min-width: 899px) {
-	.home {
+	/* .home {
 		padding-top: 8rem;
-	}
+	} */
 
 	.home-text h1 span:last-of-type span:last-of-type {
 		left: 230px;
 		top: 140px;
 		width: 200px;
 	}
-
+	.home-text h1 {
+		text-align: center;
+		padding-top: -30rem;
+	}
 	.react-typewriter-text-wrap {
 		margin-top: -1.5rem;
+	}
+	.btns {
+		margin: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		max-width: 70vw;
+	}
+	.btn1,
+	.btn2 {
+		padding: 12px;
 	}
 }
 
 @media only screen and (max-width: 900px) and (min-width: 800px) {
-	.home {
+	/* .home {
 		padding-top: 8rem;
+	} */
+	.home-text h1 {
+		text-align: center;
 	}
-
 	.home-text h1 span:last-of-type span:last-of-type {
 		left: 250px;
 		top: 145px;
@@ -131,25 +156,49 @@
 	.home-text .react-typewriter-text {
 		line-height: 1.6rem;
 	}
+	.btns {
+		margin: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		max-width: 70vw;
+	}
+	.btn1,
+	.btn2 {
+		padding: 12px;
+	}
 }
 
 @media only screen and (max-width: 800px) and (min-width: 600px) {
-	.home {
+	/* .home {
 		padding-top: 8rem;
+	} */
+	.home-text h1 {
+		text-align: center;
 	}
-
 	.home-text h1 span:last-of-type span:last-of-type {
 		left: 280px;
 		top: 145px;
 		width: 200px;
 	}
+	.btns {
+		margin: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		max-width: 70vw;
+	}
+	.btn1,
+	.btn2 {
+		padding: 12px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-	.home {
+	/* .home {
 		padding-top: 10rem;
+	} */
+	.home-text h1 {
+		text-align: center;
 	}
-
 	.home-text h1 span:last-of-type span:last-of-type {
 		left: 200px;
 		top: 155px;
@@ -167,13 +216,20 @@
 	.react-typewriter-text-wrap {
 		margin-top: -01.5rem;
 	}
-
+	.btns {
+		margin: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		max-width: 70vw;
+	}
 	.btn1 {
-		width: 90px;
+		width: 120px;
+		padding: 6px;
 	}
 
 	.btn2 {
 		width: 120px;
+		padding: 6px;
 	}
 }
 
@@ -183,5 +239,23 @@
 		left: 63px;
 		width: 150px;
 		transform: rotate(20deg);
+	}
+	.home-text h1 {
+		text-align: center;
+	}
+	.btns {
+		margin: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		max-width: 70vw;
+	}
+	.btn1 {
+		padding: 6px;
+		font-size: 15px;
+	}
+
+	.btn2 {
+		padding: 6px;
+		font-size: 15px;
 	}
 }

@@ -16,7 +16,7 @@ const Nav = ({ sections }) => {
   useEffect(() => {
     window.onscroll = () => {
       sections.forEach((section) => {
-        const top = window.scrollY + 150;
+        const top = window.scrollY + 300;
         const offset = section.current.offsetTop;
         const height = section.current.offsetHeight;
         const id = section.current.getAttribute('id')
