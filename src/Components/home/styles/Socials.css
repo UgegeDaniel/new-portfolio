@@ -1,6 +1,6 @@
 :root {
 	--social-main-color: white;
-	--social-size: calc(100vh/12);
+	--social-size: calc(100vh/15);
 	--icon-size: calc(var(--social-size) / 2);
 }
 

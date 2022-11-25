@@ -224,12 +224,13 @@
 	}
 	.btn1 {
 		width: 120px;
-		padding: 6px;
+		padding: 16px;
+		font-size: 18.5px
 	}
-
 	.btn2 {
-		width: 120px;
-		padding: 6px;
+		width: 140px;
+		padding: 14px;
+		font-size: 18.5px
 	}
 }
 

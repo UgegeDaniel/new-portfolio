@@ -3,7 +3,7 @@
 	--container-width: 100vw;
 	--number: 26;
 	/* --skill-size: calc(var(--container-width) / var(--number)); */
-	--skill-size: calc(100vw/15);
+	--skill-size: 80px;
 }
 
 .skills {
@@ -43,8 +43,8 @@
 	color: var(--skill-color);
 	font-weight: 600;
 	display: block;
+	font-size: 14px;
 	/* margin-bottom: -2px; */
-	font-size: 12px;
 }
 
 .skill div svg {
@@ -90,43 +90,34 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.skills{
+		max-height: 70vh;
+		overflow-y: scroll;
+	}
+	.skill p {
+		color: var(--skill-color);
+		font-size: 12px;
+		display: block
+	}
 }
 @media only screen and (max-width: 500px) {
 	:root {
-		--container-width: 380px;
-		--number: 6;
-		--skill-size: 50px;
-	}
-
-	.skill {
-		justify-content: center;
-		align-items: center;
-	}
-	.skill div {
-		padding: 5px;
-		border-radius: 50%;
-	}
-	.skill div svg {
-		min-height: calc(var(--skill-size) - 30px);
-		width: calc(var(--skill-size) - 30px);
-		margin-bottom: 0px;
+		--skill-color: black;
+		--container-width: 100vw;
+		--number: 26;
+		--skill-size: 65px;
 	}
 	.skill p {
-		font-weight: 400;
-		display: block;
+		color: var(--skill-color);
 		font-size: 12px;
+		display: block
 	}
 }
 @media only screen and (max-width: 350px) {
 	:root {
-		--container-width: 300px;
-		--number: 5;
-	}
-	.skill {
-		justify-content: center;
-		align-items: center;
-	}
-	.skill p {
-		display: none;
+		--skill-color: black;
+		--container-width: 100vw;
+		--number: 26;
+		--skill-size: 50px;
 	}
 }
