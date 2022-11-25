@@ -3,6 +3,7 @@ import { handleDownload } from '../../utils'
 const HomeCta = () => (
     <div className="btns">
         <NavLink
+            handleClick={()=> {return}}
             className='btn1'
             to="mail"
             offset={0}

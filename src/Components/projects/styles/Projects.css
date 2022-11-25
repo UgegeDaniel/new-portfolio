@@ -6,15 +6,50 @@
 	min-height: 100vh;
 	position: relative;
 	overflow: hidden;
+	padding-top: 4rem;
+	/* width: 100vw; */
+	/* margin: 0 -4rem; */
 }
 
 .Projects>div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	/* margin-bottom: 2rem; */
 }
 
 .Projects>h2{
 	font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 1040px) and (min-width: 899px) {
+	.Projects>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+	.Projects>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+	.Projects>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.Projects>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.Projects>h2 {
+		font-size: calc(1vw + 1.6rem);
+	}
 }
