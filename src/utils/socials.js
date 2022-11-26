@@ -3,22 +3,22 @@ import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/a
 
 const socials = [
     {
-        link: "https://linkedin.com/in/favour-faiyetole",
+        link: "mailto:ugege62@gmail.com",
         icon: FaEnvelope,
         className: 'link ml'
     },
     {
-        link: "https://github.com/Dun-sin",
+        link: "https://github.com/ugegedaniel",
         icon: AiFillGithub,
         className:'git ml'
     },
     {
-        link: "https://linkedin.com/in/favour-faiyetole",
+        link: "https://www.linkedin.com/in/daniel-ugege-50a499227",
         icon: AiFillLinkedin,
         className: 'link ml'
     },
     {
-        link: "https://twitter.com/DunsinWebDev",
+        link: "https://twitter.com/ugege_daniel",
         icon: AiFillTwitterCircle,
         className: 'twit ml'
     },
