@@ -1,4 +1,4 @@
-const ContactOption = ({toSend, handleChange, radio, isDisabled, value, text}) => (
+const ContactOption = ({toSend, handleClick, radio, value, text}) => (
     <div>
         <input
             type="radio"
@@ -6,9 +6,8 @@ const ContactOption = ({toSend, handleChange, radio, isDisabled, value, text}) =
             value={value}
             id={value}
             checked={toSend.subject === {value}}
-            onChange={handleChange}
+            onChange={(e) => handleClick(e)}
             ref={radio}
-            disabled={isDisabled}
         />
         <label htmlFor={value}>{text}</label>
     </div>

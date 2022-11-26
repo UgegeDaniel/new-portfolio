@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import './styles/Mail.css'
-import { InputField, Options } from './index'
+import { InputField } from './index'
 import { toSendInitialState, handleSubmit } from '../../utils'
 
 const Mail = ({section}) => {
@@ -22,12 +22,11 @@ const Mail = ({section}) => {
           <InputField name="email" value={email} handleChange={handleChange} labelTitle="Email" />
         </div>
         <div className="flex">
-          <Options toSend={toSend} handleChange={handleChange} />
-          <InputField name="message" cols="30" rows="5" value={message} handleChange={handleChange} labelTitle="Message" />
+          <InputField name="message" rows="5" value={message} handleChange={handleChange} labelTitle="Message" />
         </div>
         <div className="flex">
-          <p style={{ color: 'red', display: 'none' }} ref={error}>You missed a field </p>
-          <button className='btn' onClick={() => handleSubmit(toSend, error, reset)}>Send Message</button>
+          <p style={{ color: 'red', display: 'none' }} ref={error}>Something went wrong </p>
+          <button className='btn' onClick={(e) => handleSubmit(e, toSend, error, reset)}>Send Message</button>
         </div>
       </form>
     </section>

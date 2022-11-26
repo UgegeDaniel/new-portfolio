@@ -159,7 +159,10 @@ button.btn:hover{
 	align-items: flex-start;
 	gap: 2vw;
 }
-
+label {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
 @media only screen and (max-width: 600px) {
 	:root {
 		--input-width: 300px;

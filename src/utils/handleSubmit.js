@@ -1,22 +1,26 @@
-import { send } from 'emailjs-com';
-import validation  from './validation'
+import emailjs from '@emailjs/browser';
+import validation from './validation'
 
 const serviceID = process.env.REACT_EMAIL_JS_SERVICE_ID
 const templateID = process.env.REACT_EMAIL_JS_TEMPLATE_ID
 const publicKey = process.env.REACT_EMAIL_JS_PUBLIC_KEY
 
-const handleSubmit = (toSend, error, reset) => {
-    const valid = { email: false, rest: false };
-    const { email, name, message, subject } = toSend
-    validation(toSend, valid);
-    const condition = Object.values(valid).every((value) => value === true)
-    if (!condition) {
-      error.current.style.display = 'block'
-    } else {
-      //Using email.js to send emails https://www.emailjs.com/docs/sdk/installation/
-      send(serviceID, templateID, { subject, name, email, message, }, publicKey);
-      error.current.style.display = 'none'
-      reset()
-    }
+const handleSubmit = (e, toSend, error, reset) => {
+  e.preventDefault();
+  const valid = { email: false, rest: false };
+  validation(toSend, valid);
+  const condition = Object.values(valid).every((value) => value === true)
+  if (!condition) {
+    error.current.style.display = 'block'
+  } else {
+    emailjs.send('service_jfy1coa', 'template_8gp1s0o', toSend, 'zJSXdqPnC5cYSFHl6')
+      .then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      }, function (error) {
+        console.log('FAILED...', error);
+      });
+    error.current.style.display = 'none'
+    reset()
   }
-  export default handleSubmit;
+}
+export default handleSubmit;
