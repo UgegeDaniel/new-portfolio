@@ -1,11 +1,11 @@
 const projects = [
     {
-      name: 'Project 1',
+      name: 'Jakk',
       desc: 'This is a simple full stack application geared towards aiding students sitting for various O - Level Examinations with a progressive and accessible means of practicing.',
       liveLink: 'https://jakk-frontend.vercel.app/',
       githubLink: 'https://github.com/UgegeDaniel/jakk-frontend',
       techs: ['React', 'JavaScript', 'Express', 'Material UI', 'MongoDB'],
-      category: "Open Source"
+      category: "Fullstack"
     },
     {
       name: 'Chakra Movies',
@@ -13,7 +13,7 @@ const projects = [
       liveLink: 'https://chakra-movies.vercel.app/',
       githubLink: 'https://github.com/UgegeDaniel/chakra-movies',
       techs: ['React', 'TypeScript', 'Chakra UI', 'Vite', 'Jest'],
-      category: "Personal Project"
+      category: "Front End"
     },
     {
       name: 'Game of Quotes',
@@ -21,7 +21,7 @@ const projects = [
       liveLink: 'https://game-of-quotes.vercel.app/',
       githubLink: 'https://github.com/UgegeDaniel/game-of-quotes',
       techs: ['React', 'JavaScript', 'CSS3', 'Rest API'],
-      category: "Personal Project"
+      category: "Front End"
     }
 ]
   export default projects

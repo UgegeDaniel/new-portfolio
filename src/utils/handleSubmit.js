@@ -5,7 +5,7 @@ const serviceID = process.env.REACT_EMAIL_JS_SERVICE_ID
 const templateID = process.env.REACT_EMAIL_JS_TEMPLATE_ID
 const publicKey = process.env.REACT_EMAIL_JS_PUBLIC_KEY
 
-const handleSubmit = (e, toSend, error, reset) => {
+const handleSubmit = (e, toSend, error, success, reset) => {
   e.preventDefault();
   const valid = { email: false, rest: false };
   validation(toSend, valid);
@@ -19,10 +19,15 @@ const handleSubmit = (e, toSend, error, reset) => {
     emailjs.send('service_jfy1coa', 'template_8gp1s0o', toSend, 'zJSXdqPnC5cYSFHl6')
       .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
+        success.current.style.display = 'block'
+        setTimeout(()=> {
+          success.current.style.display = 'none'
+        }, 5000)
       }, function (error) {
         console.log('FAILED...', error);
       });
     error.current.style.display = 'none'
+    success.current.style.display = 'none'
     reset()
   }
 }

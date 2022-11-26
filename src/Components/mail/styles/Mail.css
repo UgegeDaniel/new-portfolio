@@ -34,10 +34,7 @@
 	min-height: 40px;
 }
 
-.entry textarea {
-	padding-top: 10px;
-	resize: none;
-}
+
 
 .entry>div:not(.btn, .options, .flex) {
 	margin-top: 20px;
@@ -130,7 +127,7 @@
 button.btn {
 	cursor: pointer;
 	background: var(--clr-primary-6);
-	width: calc(calc(var(--input-width) / 2) + 20px);
+	/* width: calc(calc(var(--input-width) / 2) + 20px); */
 	min-height: 35px;
 	display: grid;
 	place-items: center;
@@ -141,7 +138,7 @@ button.btn {
 	font-weight: bold;
 	font-size: 20px;
 	letter-spacing: 2px;
-	padding: 12px 14px;
+	padding: 12px 30px;
 	margin-right: auto;
 }
 button.btn:hover{
@@ -160,9 +157,22 @@ button.btn:hover{
 	align-items: flex-start;
 	gap: 2vw;
 }
+/* .flex-col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} */
 label {
 	margin-top: 30px;
 	margin-bottom: 20px;
+}
+
+.entry textarea {
+	padding-top: 10px;
+	width: 75vw;
+	resize: none;
+	margin-right: auto;
 }
 @media only screen and (max-width: 600px) {
 	:root {

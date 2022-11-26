@@ -7,6 +7,7 @@ const Mail = ({section}) => {
   const [toSend, setToSend] = useState(toSendInitialState);
   const { email, name, message } = toSend
   const error = useRef()
+  const success = useRef()
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
@@ -21,12 +22,13 @@ const Mail = ({section}) => {
           <InputField name="name" value={name} handleChange={handleChange} labelTitle="Name" />
           <InputField name="email" value={email} handleChange={handleChange} labelTitle="Email" />
         </div>
-        <div className="flex">
+        <div className="flex-col">
           <InputField name="message" rows="5" value={message} handleChange={handleChange} labelTitle="Message" />
         </div>
         <div className="flex">
           <p style={{ color: 'red', display: 'none' }} ref={error}>Something went wrong </p>
-          <button className='btn' onClick={(e) => handleSubmit(e, toSend, error, reset)}>Send Message</button>
+          <p style={{ color: 'green', display: 'none' }} ref={success}>Thank you for Reaching out</p>
+          <button className='btn' onClick={(e) => handleSubmit(e, toSend, error, success, reset)}>Send</button>
         </div>
       </form>
     </section>
