@@ -11,7 +11,10 @@ const handleSubmit = (e, toSend, error, reset) => {
   validation(toSend, valid);
   const condition = Object.values(valid).every((value) => value === true)
   if (!condition) {
-    error.current.style.display = 'block'
+    error.current.style.display = 'block';
+    setTimeout(()=> {
+      error.current.style.display = 'none'
+    }, 5000)
   } else {
     emailjs.send('service_jfy1coa', 'template_8gp1s0o', toSend, 'zJSXdqPnC5cYSFHl6')
       .then(function (response) {
