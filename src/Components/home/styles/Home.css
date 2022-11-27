@@ -43,7 +43,7 @@
 }
 
 .react-typewriter-text-wrap {
-	margin-top: -2rem;
+	/* margin-top: -2rem; */
 }
 
 .home-text .react-typewriter-text {
@@ -56,12 +56,10 @@
 	margin-top: 0.5rem;
 	display: flex;
 	position: relative;
-	justify-content: space-between;
-}
-.btns {
-	margin: 0.5rem;
 	justify-content: center;
 	align-items: center;
+}
+.btns {
 	max-width: 70vw;
 }
 .btn1,
@@ -235,6 +233,7 @@
 }
 
 @media only screen and (max-width: 500px) {
+
 	.home-text h1 span:last-of-type span:last-of-type {
 		top: 140px;
 		left: 63px;
@@ -258,5 +257,52 @@
 	.btn2 {
 		padding: 6px;
 		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 390px){
+	.home{
+		margin-top: -15vh;
+	}
+}
+@media only screen and (min-width: 360px){
+	.home{
+		margin-top: -12vh;
+	}
+}
+@media only screen and (min-width: 820px){
+	.home{
+		margin-top: -22vh;
+	}
+	.react-typewriter-text-wrap {
+		/* margin-top: -2rem; */
+		margin-bottom: -0.75rem;
+		min-height: 100%;
+	}
+	.home-text .react-typewriter-text::after {
+		content: "";
+		padding: 1rem;
+		display: block;
+	}
+}
+@media only screen and (min-width: 768px){
+
+}
+@media only screen and (max-width: 375px){
+
+	.btns {
+		margin: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		max-width: 70vw;
+	}
+	.btn1 {
+		padding: 6px;
+		font-size: 15px;
+	}
+
+	.btn2 {
+		padding: 8px;
+		font-size: 12px;
 	}
 }

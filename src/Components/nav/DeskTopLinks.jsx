@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 const DeskTopLinks = ({handleClick, NavLinks, activePage, setOpenLinks }) => (
     <React.Fragment>
         <div onClick={handleClick} className="menu">
-            <GiHamburgerMenu onClick={()=> setOpenLinks(true)}/>
+            <GiHamburgerMenu onClick={()=> setOpenLinks(true)} className="hamburger"/>
         </div>
         <div className='large' >
             <NavLinks activePage={activePage} handleClick={handleClick}/>
