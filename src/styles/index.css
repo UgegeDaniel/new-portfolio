@@ -66,6 +66,7 @@ body {
 	scroll-behavior: smooth;
 	scrollbar-color: #6253e8 #232135;
 	scrollbar-width: thin;
+	box-sizing: border-box;
 }
 
 code {

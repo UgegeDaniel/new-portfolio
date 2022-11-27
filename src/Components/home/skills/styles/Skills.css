@@ -13,23 +13,18 @@
 	justify-content: space-around;
 	align-items: center;
 	gap: 0.5rem;
-	margin-top: 1rem;
-	/* padding-left: 5rem; */
+	margin-top: 3rem;
 }
+
 .skill {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
-	/* margin-left: -120px; */
-	/* margin-right: -26px; */
 }
 
 .skill div {
-	/* margin-right: 20px; */
-	/* margin-bottom: 20px; */
-	/* min-height: var(--skill-size); */
 	width: var(--skill-size);
 	background-color: #ffffffe6;
 	height: var(--skill-size);
@@ -44,7 +39,6 @@
 	font-weight: 600;
 	display: block;
 	font-size: 14px;
-	/* margin-bottom: -2px; */
 }
 
 .skill div svg {
@@ -58,48 +52,65 @@
 .js:hover {
 	--skill-color: #fddd00;
 }
+
 .html:hover {
 	--skill-color: #f1662a;
 }
+
 .css:hover,
 .ts:hover {
 	--skill-color: #1572b6;
 }
+
 .react:hover {
 	--skill-color: #00d8ff;
 }
+
 .node:hover {
 	--skill-color: #539e43;
 }
+
 .fig:hover {
 	--skill-color: #a259ff;
 }
+
 .mon:hover {
 	--skill-color: #41a247;
 }
+
 .fire:hover {
 	--skill-color: #eeab37;
 }
+
+/* @media only screen and (min-width: 820px) {
+	.skills {
+		margin-top: 5rem;
+	}
+} */
 
 @media only screen and (max-width: 600px) {
 	:root {
 		--container-width: 500px;
 		--number: 7;
 	}
+
 	.skill {
 		justify-content: center;
 		align-items: center;
 	}
-	.skills{
+
+	.skills {
 		max-height: 70vh;
 		overflow-y: scroll;
 	}
+
 	.skill p {
 		color: var(--skill-color);
 		font-size: 12px;
 		display: block
 	}
 }
+
 @media only screen and (max-width: 500px) {
 	:root {
 		--skill-color: black;
@@ -107,12 +118,14 @@
 		--number: 26;
 		--skill-size: 65px;
 	}
+
 	.skill p {
 		color: var(--skill-color);
 		font-size: 12px;
 		display: block
 	}
 }
+
 @media only screen and (max-width: 350px) {
 	:root {
 		--skill-color: black;
