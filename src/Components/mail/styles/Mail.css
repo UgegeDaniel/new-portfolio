@@ -5,11 +5,23 @@
 .mail {
 	padding-top: 23vh;
 	padding-bottom: 80px;
+	margin: auto 0;
 	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
 }
 
-.mail>h2{
+.mail>h2 {
 	font-size: 3rem;
+}
+
+.entry{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
 }
 
 .entry input,
@@ -35,16 +47,15 @@
 	min-height: 40px;
 }
 
-
-
-.entry>div:not(.btn, .options, .flex) {
+.entry>div:not(.btn, .options,) {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 }
 
 .entry>div:not(.btn) label {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
 .options {
@@ -66,65 +77,6 @@
 	overflow: hidden;
 }
 
-[type='radio'] {
-	padding-top: 5px;
-}
-
-[type='radio']:checked,
-[type='radio']:not(:checked) {
-	position: absolute;
-	left: -9999px;
-}
-
-[type='radio']:checked+label,
-[type='radio']:not(:checked)+label {
-	position: relative;
-	padding-left: 28px;
-	cursor: pointer;
-	line-height: 20px;
-	display: inline-block;
-	color: var(--clr-grey-6);
-}
-
-[type='radio']:checked+label:before,
-[type='radio']:not(:checked)+label:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 18px;
-	height: 18px;
-	border: 1px solid #ddd;
-	border-radius: 100%;
-	background: transparent;
-}
-
-[type='radio']:checked+label:after,
-[type='radio']:not(:checked)+label:after {
-	content: '';
-	width: 12px;
-	height: 12px;
-	background: var(--clr-primary-6);
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	border-radius: 100%;
-	-webkit-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-
-[type='radio']:not(:checked)+label:after {
-	opacity: 0;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-}
-
-[type='radio']:checked+label:after {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
 button.btn {
 	cursor: pointer;
 	background: var(--clr-primary-6);
@@ -135,40 +87,31 @@ button.btn {
 	border-radius: 5px;
 	margin-top: 10px;
 	color: var(--clr-grey-5);
-	border: 1px solid var(--clr-primary-6);
+	border: 2px solid rgb(175, 171, 171);
 	font-weight: bold;
 	font-size: 20px;
 	letter-spacing: 2px;
 	padding: 12px 30px;
 	margin-right: auto;
 }
-button.btn:hover{
+
+button.btn:hover {
 	background: var(--clr-grey-5);
 	color: var(--clr-primary-6);
 }
+
 .input-item {
 	display: inline-block;
 	margin-bottom: 10px;
 }
 
-.flex {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 2vw;
-}
-label {
-	margin-top: 30px;
-	margin-bottom: 20px;
-}
-
 .entry textarea {
 	padding-top: 10px;
-	width: 75vw;
+	width: var(--input-width);
 	resize: none;
 	margin-right: auto;
 }
+
 @media only screen and (max-width: 600px) {
 	:root {
 		--input-width: 300px;
@@ -197,6 +140,7 @@ label {
 	.flex {
 		display: block;
 	}
+
 	.mail {
 		margin-top: -24vh;
 		padding-bottom: -15vh;

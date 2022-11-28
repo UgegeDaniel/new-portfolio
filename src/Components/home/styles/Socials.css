@@ -40,7 +40,8 @@
 	background-color: var(--social-main-color);
 	text-decoration: none;
 	text-align: center;
-	color: white;
+	color: rgb(142, 138, 138);
+	;
 	max-height: calc(var(--social-size) / 12.5);
 	width: 75%;
 	border-radius: 50%;
@@ -67,12 +68,14 @@
 .link {
 	--social-main-color: rgb(0, 119, 181);
 }
+
 .socials {
 	position: fixed;
 	top: 7rem;
 	right: 2rem;
 	z-index: 6;
 }
+
 @media only screen and (max-width: 386px) {
 	:root {
 		--social-size: 30px;

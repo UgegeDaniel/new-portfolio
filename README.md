@@ -1,105 +1,125 @@
-# template-portfolio
-This project gives you a template to use and edit for your portfolio instead of building form scratch
+*deployed on vercel*
+# Portolio Project
 
-## How to use
-Click [`Use this template`](https://github.com/Dun-sin/template-portfolio/generate) and it will create a new repo not a fork with all the files of this project for you
+This is a React app to built to display recent projects by me, Ugege Daniel in web develpment. Visitors can view project details, link to github repo, visit live demo and contact the me with a provided form.
 
-![image](https://user-images.githubusercontent.com/78784850/198232353-35fa6d2f-5816-4818-9381-a5bf394b146a.png)
+## Table of Contents
+
+- [Project Features](#project-features)
+- [Concepts and Template Employed](#concepts-and-template-employed)
+- [Built with](#built-with)
+- [Live Preview](#live-preview)
+- [Analytics](#analytics)
+- [Source Folder Structure](#folder-structure)
+- [Required Installations](#required-installations)
+- [Installation of This App](#instalation)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+<!-- Project Features -->
+
+## Project Features
+
+- A user upon visiting the app, sees the navigation and a banner.
+- Users can navigated across the page by clicking on the navigation items.
+- The search feature is optimised by implememting a debounce function. 
+
+<!-- concepts and apis employed -->
+
+## Concepts and Template Employed
+
+- This project was built using an open-source template. <br/>
+- This app demonstrates the use of basic concepts of React Library 
+- This app demonstrates the use of basic concepts of React Library: 
+  - Components structuring 
+  - React Functional component with javascript
+  - React hooks (useState, useEffect, useCallback)
+  - Custom hooks
+  - Event handling
+- This app also demonstrates the building of basic unit / integration tests with the React Testing Library.
+- Click here to read [More About The Open Source Template](https://github.com/Dun-sin/template-portfolio) used for this project
 
 
-## 🧑🏾‍💻 Demo
+## Built with
 
-Check out the website: [Template](https://portfolio-template-olddunsin.vercel.app/)
+- HTML5
+- CSS3
+- JavaScript
+- React
+<!-- - ES Lint (Air Bnb recomended standard) -->
 
-## 👇🏽 Prerequisites to use and contribute
-- [React.js](https://reactjs.org/) - to use
-Before installation, please make sure you have already installed the following tools:
+<!-- LIVE PREVIEW -->
 
-- [Git](https://git-scm.com/downloads) - to contribute
-- [Node.js](https://nodejs.org/en/download/) - to contribute
+## Live Preview
 
+<!-- Find the live version [here](https://movie-verse-phi.vercel.app/). -->
+Below is a screenshot of what it looks like.
 
-## 👌🏾 What you have to do to contribute
+<!-- <img src="src/assests/img/movie-verse.png" alt="screenshot" height="300px" width="auto"/> -->
 
-- [Read the rules](https://github.com/Dun-sin/template-portfolio/blob/main/CONTRIBUTING.md#rules)
-- [Follow the installation Steps](#%EF%B8%8F-installation-steps)
-- [Follow the contributing Steps](#-after-making-a-change)
+<!-- Analytics -->
 
-## 🛠️ Installation Steps
+## Analytics
 
-1. [Fork](https://github.com/Dun-sin/template-portfolio/fork) the project. Click on the <a href="https://github.com/Dun-sin/template-portfolio/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started
-2. Clone the project, you can use the following command:
+<!-- Source Folder Structure -->
 
-```bash
-git clone https://github.com/<your-github-username>/template-portfolio
+## Source Folder Structure
+- src 
+  - components
+    - Example.jsx
+    - styles
+      - Example.css
+  - hooks
+  - styles
+  - utils <br/>
+  app.js <br/>
+  index.js
+<!-- REQUIRED INSTALLATION -->
+
+## Required Installations
+
+- Npm
+
+<!-- Installation of This App -->
+
+## Installation of This App
+
+Once you have installed the required packages shown on the [Required Installations](#required-installations), proceed with the following steps
+
+Clone the Repository
+
+```Shell
+your@pc:~$ git clone git@github.com:ugegedaniel/chakra-movies-app.git
 ```
 
-3. Navigate to the project directory
+Move to the downloaded folder
 
-```bash
-cd template-portfolio
+```Shell
+your@pc:~$ cd chakra-movies
 ```
 
-4. Install dependencies with npm install
+Install all packages
 
-```bash
-npm install
+```Shell
+your@pc:~$ npm install
 ```
 
-5. Run the project
+Open the app
 
-```bash
-npm start
+```Shell
+your@pc:~$ npm start
 ```
+## License
 
-## 🥂 After making a change
+Distributed under the MIT License. See `LICENSE` for more information.
 
-1. Create a new branch
+<!-- CONTACT -->
 
-```bash
-git checkout -b YourBranchName
-```
+## Contact
 
-2. Add it to staging area
+- 🇳🇬  Ugege Daniel - ugege62@gmail.com | [Github Account](https://github.com/ugegedaniel) | [Twitter](https://twitter.com/ugege_daniel) | [Linkedin](https://www.linkedin.com/in/daniel-ugege-50a499227) | 
 
-> NOTE: don't commit the package.json
+## Acknowledgements
 
-```bash
-git add <path to the file you worked on>
-```
-
-3. Commit your changes with
-
-```bash
-git cz
-```
-
-4. Push your changes
-
-```bash
-git push
-```
-
-## 👨‍👩‍👦 Community
-
-Don't forget to join the discord community - [Join us](https://discord.com/invite/ufcysW9q23)
-
-## 👩🏽‍💻 Contributing
-
-- Contributions make the open source community such an amazing place to learn, inspire, and create.
-- Any contributions you make are greatly appreciated.
-- Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
-
-## 🛡️ License
-
-This template is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 💪🏽 Thanks to all Contributors
-
-Thanks a lot for spending your time helping template grow. Thanks a lot! Keep rocking🍻
-
-[![Contributors](https://contrib.rocks/image?repo=Dun-sin/template-portfolio)](https://github.com/Dun-sin/template-portfolio/graphs/contributors)
-
-## 🙏🏽 Support
-
-This project needs a star️ from you. Don't forget to leave a star✨
+- <a href="https://github.com/Dun-sin/"> Favour Faiyetole</a> | <a href="https://github.com/frankly034"> Lewis Ugege</a> | God Almighty .

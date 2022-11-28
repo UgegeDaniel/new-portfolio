@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     justify-items: space-between;
     align-items: center;
@@ -7,18 +7,19 @@
     position: relative;
 }
 
-.arrow{
+.arrow {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid rgb(142, 138, 138);
 }
 
 @media screen and (min-width: 350px) and (max-width: 820px) {
-    .arrow{
+    .arrow {
         position: fixed;
         bottom: 6rem;
-        border: 2px solid white;
-        height: 2.5rem;
-        width: 2.5rem;
+
     }
 }

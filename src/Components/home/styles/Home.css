@@ -9,7 +9,7 @@
 	padding-top: 20vh;
 	margin: 1vh auto;
 	padding: 1vh auto;
-	margin-top: -25vh;
+	margin-top: 30vh;
 	padding-top: -15vh;
 }
 
@@ -111,7 +111,7 @@
 
 @media only screen and (min-width: 1024px){
 	.home-text {
-		/* flex-direction: column;
+		flex-direction: column;
 		justify-content: center;
 		min-height: 100vh;
 		position: relative;
@@ -120,28 +120,29 @@
 		margin: 1vh auto;
 		padding: 1vh auto;
 		margin-top: -25vh;
-		padding-top: -15vh; */
+		padding-top: -15vh;
 	}
 	.btn1{
 		width: 120px;
 		padding: 10px;
 	}
 }
-/* @media only screen and (min-width: 820px) and (max-width: 1080px){
+@media only screen and (min-width: 820px) and (max-width: 1080px){
 	.home-text {
 		padding-top: 20vh;
 		margin: 1vh auto;
 		padding: 1vh auto;
-		margin-top: -35vh;
+		margin-top: -6rem;
 	}
-} */
+}
+
 
 @media only screen and (min-width: 390px) and (max-width: 819px){
 	.home-text {
 		padding-top: 20vh;
 		margin: 1vh auto;
 		padding: 1vh auto;
-		margin-top: -35vh;
+		margin-top: -6rem;
 	}
 	.home-text h1 {
 		font-size: calc(1vw + 2rem);
@@ -159,11 +160,18 @@
 		width: 120px;
 	}
 }
-
+/* @media only screen and (min-width: 390px) and (max-width: 416px){
+	.home-text {
+		padding-top: 20vh;
+		margin: 1vh auto;
+		padding: 1vh auto;
+		margin-top: -20rem;
+	}
+} */
 @media only screen and (min-width: 361px) and (max-width: 389px){
 	.home-text {
 		padding-top: 20vh;
-		margin-top: -15vh;
+		margin-top: -25vh;
 	}
 	.home-text h1 {
 		font-size: calc(1vw + 2rem);
