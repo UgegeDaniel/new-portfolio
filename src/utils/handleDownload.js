@@ -1,7 +1,7 @@
 import { saveAs } from "file-saver";
 const handleDownload = () => {
     saveAs(
-      "../../public/resume.pdf",
+      "../../public/ugege-daniel-portfolio-resume.docx",
       "Resume.pdf"
     )
   }
