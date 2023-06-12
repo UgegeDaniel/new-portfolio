@@ -171,7 +171,7 @@
 @media only screen and (min-width: 361px) and (max-width: 389px){
 	.home-text {
 		padding-top: 20vh;
-		margin-top: -25vh;
+		margin-top: 0vh;
 	}
 	.home-text h1 {
 		font-size: calc(1vw + 2rem);
@@ -192,7 +192,7 @@
 @media only screen and (min-width: 350px) and (max-width: 360px){
 	.home-text {
 		padding-top: 20vh;
-		margin-top: -25vh;
+		margin-top: 0vh;
 	}
 	.home-text h1 {
 		font-size: calc(1vw + 2rem);
