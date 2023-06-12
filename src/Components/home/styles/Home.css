@@ -132,7 +132,7 @@
 		padding-top: 20vh;
 		margin: 1vh auto;
 		padding: 1vh auto;
-		margin-top: -6rem;
+		margin-top: 0rem;
 	}
 }
 
@@ -142,7 +142,7 @@
 		padding-top: 20vh;
 		margin: 1vh auto;
 		padding: 1vh auto;
-		margin-top: -6rem;
+		margin-top: 0rem;
 	}
 	.home-text h1 {
 		font-size: calc(1vw + 2rem);
